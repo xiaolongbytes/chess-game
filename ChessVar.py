@@ -660,16 +660,19 @@ class ChessVar:
         """Prints current board state to the terminal"""
         return self._board.show_board()
 
-def main():
-    """Used for testing"""
-    game = ChessVar()
-    game._board.move_piece(2, 7, 2, 0)
-    game._board.move_piece(7,0, 7,7)
-    print(game.get_game_state())
-    print(game._current_turn)
-    game.enter_fairy_piece("F", "c1")
-    game.enter_fairy_piece("h", "h8")
-    game.show_board()
+# def main():
+#     """Used for testing"""
+#     game = ChessVar()
+#     game._board.move_piece(2, 7, 2, 0)
+#     game._board.move_piece(7,0, 7,7)
+#     print(game.get_game_state())
+#     print(game._current_turn)
+#     game.enter_fairy_piece("F", "c1")
+#     game.enter_fairy_piece("h", "h8")
+#     game._board.move_piece(2,7, 2,4)
+#     game._current_turn = "white"
+#     game.enter_fairy_piece("F", "c1") == False
+#     game.show_board()
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()

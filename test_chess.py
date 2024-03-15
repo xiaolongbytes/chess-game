@@ -235,5 +235,8 @@ class TestChessVar:
             "h" : game._board._pieces["black hunter"],
             "H" : game._board._pieces["white hunter"],
         }
+        game._board.move_piece(2,7, 2,4)
+        game._current_turn = "white"
+        assert game.enter_fairy_piece("F", "c1") == False
 
 
