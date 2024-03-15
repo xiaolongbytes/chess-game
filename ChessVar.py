@@ -217,7 +217,7 @@ class Piece:
         destination_column = origin_column + squares_moved_left_right
         return destination_column, destination_row
     
-    def get_valid_destinations(self, origin_column:int, origin_row:int, board: Board) -> list[tuple]:
+    def get_valid_destinations(self, origin_column:int, origin_row:int, board):
         """Returns a list of tuples, where each tuple is a valid coordinate for a destination square"""
         pass
 
