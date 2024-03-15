@@ -239,7 +239,7 @@ class Pawn(Piece):
         else:
             return '\u2659'
         
-    def get_valid_destinations(self, origin_column:int, origin_row:int, board: Board) -> list[tuple]:
+    def get_valid_destinations(self, origin_column:int, origin_row:int, board) -> list[tuple]:
         """Returns a list of tuples, where each tuple is a valid coordinate for a destination square"""
         valid_destinations = []        
         # Check Pawn moving forward 1 square
@@ -278,7 +278,7 @@ class Knight(Piece):
         else:
             return '\u2658'
         
-    def get_valid_destinations(self, origin_column:int, origin_row:int, board: Board) -> list[tuple]:
+    def get_valid_destinations(self, origin_column:int, origin_row:int, board) -> list[tuple]:
         """Returns a list of tuples, where each tuple is a valid coordinate for a destination square"""
         valid_destinations = []
         possible_moves = [
@@ -312,7 +312,7 @@ class Bishop(Piece):
         else:
             return '\u2657'
             
-    def get_valid_destinations(self, origin_column:int, origin_row:int, board: Board) -> list[tuple]:
+    def get_valid_destinations(self, origin_column:int, origin_row:int, board) -> list[tuple]:
         """Returns a list of tuples, where each tuple is a valid coordinate for a destination square"""
         valid_destinations = []
         possible_moves = [
@@ -349,7 +349,7 @@ class Rook(Piece):
         else:
             return '\u2656'
                 
-    def get_valid_destinations(self, origin_column:int, origin_row:int, board: Board) -> list[tuple]:
+    def get_valid_destinations(self, origin_column:int, origin_row:int, board) -> list[tuple]:
         """Returns a list of tuples, where each tuple is a valid coordinate for a destination square"""
         valid_destinations = []
         possible_moves = [
@@ -387,7 +387,7 @@ class Queen(Piece):
         else:
             return '\u2655'
                 
-    def get_valid_destinations(self, origin_column:int, origin_row:int, board: Board) -> list[tuple]:
+    def get_valid_destinations(self, origin_column:int, origin_row:int, board) -> list[tuple]:
         """Returns a list of tuples, where each tuple is a valid coordinate for a destination square"""
         valid_destinations = []
         possible_moves = [
@@ -428,7 +428,7 @@ class King(Piece):
         else:
             return '\u2654'
                 
-    def get_valid_destinations(self, origin_column:int, origin_row:int, board: Board) -> list[tuple]:
+    def get_valid_destinations(self, origin_column:int, origin_row:int, board) -> list[tuple]:
         """Returns a list of tuples, where each tuple is a valid coordinate for a destination square"""
         valid_destinations = []
         possible_moves = [
@@ -463,7 +463,7 @@ class Falcon(Piece):
         else:
             return '\u2662'
                 
-    def get_valid_destinations(self, origin_column:int, origin_row:int, board: Board) -> list[tuple]:
+    def get_valid_destinations(self, origin_column:int, origin_row:int, board) -> list[tuple]:
         """Returns a list of tuples, where each tuple is a valid coordinate for a destination square"""
         valid_destinations = []
         possible_moves = [
@@ -499,7 +499,7 @@ class Hunter(Piece):
         else:
             return '\u2616'
                 
-    def get_valid_destinations(self, origin_column:int, origin_row:int, board: Board) -> list[tuple]:
+    def get_valid_destinations(self, origin_column:int, origin_row:int, board) -> list[tuple]:
         """Returns a list of tuples, where each tuple is a valid coordinate for a destination square"""
         valid_destinations = []
         possible_moves = [
